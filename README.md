@@ -4,16 +4,19 @@ This project is a fictive analysis based on data provided by Kaggles.com.
 
 The mandate is to generate insight on the high turnover rate of Saliford Motor based on a company survey containing 11991 non-null, non-duplicated entries figuring 10 columns of data each. 
 ```
-View data dictionary for more information on different metrics used in the analysis
+Note: View data dictionary for more information on different metrics used in the analysis
 ```
-We then have to generate a prediction model for when an employee is at potential risk of leaving Saliford.
+An initial EDA reveiled key insights as to where company leadership could further the investigation in hopes to reveal the exact cause of the departures.
+
+A prediction model was then computed to help screen employees for potential risk of leaving Saliford, based on different metrics collected by the company.
 
 ## Business takeaways 
 
 Data exploration revealed valuable insights about Saliford's work force:
 
-<img src="Notebooks/average_monthly_hours_distribution.png" width=25% height=25%>
-<img src="Notebooks/average_hours_per_number_project.png" width=25% height=25%>
+Following charts show how the Monthly hours worked by saliford's employees relate to their tenure.
+
+<img src="Notebooks/average_monthly_hours_distribution.png" width=40% height=40%> <img src="Notebooks/average_hours_per_number_project.png" width=40% height=40%>
 
 ```
 Burn out looks to be a significant factor in departures
@@ -24,12 +27,13 @@ Burn out looks to be a significant factor in departures
 Regardless of number of projects assigned departures seem to be correlated to the time requiered by those project rather than to the projects themselves
 
 
-
-<img src="Notebooks/departures_per_department.png" width=40% height=40%>
-
 ```
 3 departments stand out from the rest and would require further investigation
 ```
+The chart below shows percent of departure by departement.
+
+<img src="Notebooks/departures_per_department.png" width=40% height=40%>
+
 
 ```
 The promotions system does not look ideal for retention
@@ -51,10 +55,10 @@ Satisfaction
 
 ## Chalenges
 ```
-Learning to work in a multi-folder project template with version control
+This project was my first experience with version control as well as in a multiple folder project that needs interaction between multiple files
 ```
-- Had to figure out how to save and load files to and from different folders and have them interact with one another without introducing bugs
-- Lost a day of work due to forgetting to commit progress
+- I had to figure out a clear organisation method to present the project. I settled on the cookiecutter data template that I adapted to my needs
+- I lost a day of work due to forgetting to commit progress, had to learn the hard way to never do that again.
 ## Next step
 
 
