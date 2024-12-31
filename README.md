@@ -19,16 +19,18 @@ Data exploration revealed valuable insights about Saliford's work force:
 
 Following charts show how the Monthly hours worked by saliford's employees relate to their tenure.
 
-<img src="Notebooks/average_monthly_hours_distribution.png" width=40% height=40%> <img src="Notebooks/average_hours_per_number_project.png" width=40% height=40%>
+<img src="reports/figures/distribution_of_monthly_hours_average.png" width=40% height=40%> <img src="reports/figures/monthly_hours_per_project.png" width=40% height=40%>
 
 ```
 Insight: Burn out looks to be a significant factor in departures
 ```
-- Employees working outside of the 160 to 210 hours a month range are at much higher risk of turnover, the average in the US being 176.
+- Employees working outside of the 160 to 220 hours a month range are at much higher risk of turnover, the average in the US being 176. A recommended maximum for monthly hours could be set to 220 hours to help this issue.
 
 - 100% of workers assigned 7 projects left the company, dropping to 45% when assigned 6.
 
 - Regardless of number of projects assigned, departures seem to be correlated to the time requiered by those project rather than to the projects themselves.
+
+- 
 
 
 ```
@@ -36,7 +38,7 @@ Insight: 3 departments stand out from the rest and would require further investi
 ```
 The chart below shows percent of departure by departement.
 
-<img src="Notebooks/departures_per_department.png" width=40% height=40%>
+<img src="reports/figures/departure_by_department.png" width=40% height=40%>
 
 
 ```
@@ -49,7 +51,7 @@ Insight: The promotions system does not look ideal for retention
 ```
 Insight: Aiming for 3 to 5 projects per employee could help lower departures
 ```
-'Insert table from number_project inspection'
+<img src="reports/figures/table_departure_per_years.png" width=30% height=40%>
 
 ```
 Insight: Satisfaction levels are dipping in the four year category
@@ -57,13 +59,16 @@ Insight: Satisfaction levels are dipping in the four year category
 - 50% of the company repport a satisfaction level above 0.66 with 37% at or above 0.75.
 - The third and fourth years seem to be a turning point in satisfaction levels. 
 
-'insert satisfaction by year charts'
+<img src="reports/figures/satisfaction_per_years_at_company.png" width=60% height=40%>
+
 - 45% of year five left the company. 
-'insert bar chart of count vs year_spent'
+
+<img src="reports/figures/leave_per_years_at_company.png" width=60% height=40%>
+
 
 Scatter chart below shows 3 distinct areas of departures:
 
-'Insert scatter chart'
+<img src="reports/figures/scatter_plot_satisfaction_vs_hours.png" width=60% height=40%>
 
 - High work hours, low satisfaction: Most likely left from burn out
 - High work hours, high satisfaction: Most likely left for higher paid job
