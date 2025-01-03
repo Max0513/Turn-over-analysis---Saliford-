@@ -4,7 +4,7 @@ This project is a fictive analysis based on data provided by Kaggles.com, origin
 
 The mandate is to generate insight on the high turnover rate of Saliford Motor based on a company survey containing 11991 non-null, non-duplicated entries figuring 10 columns of data each. 
 ```
-Notes: -View data dictionary for more information on the different metrics used in the analysis.
+Notes: -View data dictionary in references folder for more information on the different metrics used in the analysis.
        -A folder structure template is also available at the end of this readme.
 ```
 ## Process
@@ -76,6 +76,27 @@ Scatter chart below shows 3 distinct areas of departures:
 
 ## Presentation of the  model
 
+The chosen model is tree based machine learning model.
+
+- The requiered task is classification.
+
+- EDA revealed a fair proportion of relevant outliers so we need an outlier resilient model.
+
+- Logistic regression fits requierements, but it seems the tree model could add valuable insights to stakeholder by studying the branches, it then seems like a good first choice in a world where making both and comparing would require too much time.
+
+## Model score
+
+<img src="reports/figures/confusion_matrix.png" width=60% height=40%>
+
+Best model chosen by f1 score
+
+<img src="reports/figures/model_results_table.png" width=40% height=40%>
+
+## Model results
+
+<img src="reports/figures/gini_importance.png" width=40% height=40%>
+
+
 
 ## Chalenges
 ```
@@ -83,12 +104,16 @@ This project was my first experience with version control as well as working in 
 ```
 - I had to figure out a clear organisation method to present the project. I settled on the cookiecutter data template that I adapted to my needs
 - I lost a day of work due to forgetting to commit progress, had to learn the hard way to allways backup and update files.
-## Next step
+
+## Next steps
 ```
  Investigate the three areas from the scatter chart further 
 ```
 - Investigate performance statistics for employees between 0.3 and 0.5 in satisfaction_levels that are also in the 125 to 175 average_montly_hours range to confirm hypothesis about possible layoff due to low performance.
 - Investigate salary and promotion metrics for employees between 0.75 and 1 satisfaction_levels that also fit the 225 hours and more category to confirm hypothesis about the group leaving for a higher paid job due to lack of advancement.
+```
+ Construct a logistic regression model to compare for better prediction score with the tree model if time permits.
+```
 ```
  Get access to higher quality data
 ```
