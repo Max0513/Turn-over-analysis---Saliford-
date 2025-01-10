@@ -1,3 +1,5 @@
+# Files
+Execute_model.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -93,7 +95,7 @@ target/
 .data-science-env
 
 # Exclude trained models
-/models/
+#/models/
 
 # exclude data from source control by default
 # /data/

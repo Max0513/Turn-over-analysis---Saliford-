@@ -3,6 +3,8 @@
 This project is a fictive analysis based on data provided by Kaggles.com, originating from the google career certificate for data analysis.
 
 The mandate is to generate insight on the high turnover rate of Saliford Motor based on a company survey containing 11991 non-null, non-duplicated entries figuring 10 columns of data each. 
+
+`The project resulted on valuable insights on the data for the stakeholders to reflect upon as well as in a **Tree based classification model** with a prediction f1 score of about **94%**.`
 ```
 Notes: 
 
@@ -29,6 +31,7 @@ A prediction model was then computed to help screen employees for potential risk
 Data exploration revealed valuable insights about Saliford's work force:
 
 *Following charts show how the **Monthly hours** worked by saliford's employees relate to their **tenure**.*
+<div style="border: 2px solid black;">
 <p align="center">
 <img src="reports/figures/distribution_of_monthly_hours_average.png" width=49% height=40%> <img src="reports/figures/monthly_hours_per_project.png" width=49% height=40%>
 </p>
@@ -74,7 +77,7 @@ Insight 5 : Satisfaction levels are dipping in the four year category.
 ```
  **50%** of the company repports a **satisfaction level above 0.66** with **37% at or above 0.75** wich is not bad but `levels drop around the 4 years mark`.
 <p align="center">
-<img src="reports/figures/table_satisfaction_by_year.png">     <img src="reports/figures/satisfaction_per_years_at_company.png" width=72% height=40%>
+<img src="reports/figures/table_satisfaction_by_year.png" width=25%> <img src="reports/figures/satisfaction_per_years_at_company.png" width=73% height=40%>
 </p>
 
 - Regardless of departure, `satisfaction levels drop at the 4 years employement mark`.
@@ -141,7 +144,11 @@ This project was my first experience with version control as well as working in 
 
 ## Next steps for the project
 ```
- Investigate the three areas from the scatter chart further 
+Deploy the model on streamlit for ease of acces.
+```
+
+```
+ Investigate the three areas from the scatter chart further .
 ```
 - Investigate performance statistics for employees between 0.3 and 0.5 in satisfaction_levels that are also in the 125 to 175 average_montly_hours range to confirm hypothesis about possible layoff due to low performance.
 - Investigate salary and promotion metrics for employees between 0.75 and 1 satisfaction_levels that also fit the 225 hours and more category to confirm hypothesis about the group leaving for a higher paid job due to lack of advancement.
@@ -150,7 +157,7 @@ This project was my first experience with version control as well as working in 
  Construct a logistic regression model to compare for better prediction score with the tree model if time permits.
 ```
 ```
- Get access to higher quality data
+ Get access to higher quality data.
 ```
 - Year since promotion would be better than promotion in last 5 years
 - distinction between layoff and resignation.
@@ -159,7 +166,7 @@ This project was my first experience with version control as well as working in 
 - distance from home could had valuable insights to the data.
 - salary column could have a higher level of detail for more control, there is no way to know what a 'High' salary is currently.
 ```
- Generate dashboards for management to better track important metrics 
+ Generate dashboards for management to better track important metrics.
 ```
 - Machine learning models can be a good tool, but an imperfect tool. Management must be equipped with good good data tools to add human insight wich is as much valuable to solving problems.
 
